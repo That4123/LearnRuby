@@ -12,6 +12,8 @@ def print_name(first_name, last_name)
 end
 print_name "Tran", "That" # Tran That
 puts name # the value still "This is a outer scope local variable"
+
+
 #Block scope
 total = 0
 array = [1,2,3]
@@ -32,16 +34,20 @@ puts a #5 ----> Because a = 3 is visible to the scope do end, so it can re-assig
 
 
 # TYPE OF VARIABLES
+
 # Constant
 MY_CONSTANT = "This constant will available through out the application" 
     # Constant variable is declare with the first character is capital letter
 MY_CONSTANT = "Trying to change constant variable" # Ruby allows to change the constant, but will have a warning
 puts MY_CONSTANT # Trying to change constant variable
+
 # Global variables 
 $global_var = "This variable will be available through out the application"
 puts $global_var
     # Global variables are declared and used with character $ before them
+
 # Class variables, instance variable 
     #will be learn in OOP excercise with declare @var (instant variable) or @@var (class variable)
+
 # Local variable
     # They're declare inside a method with normal declare and obey all scope boundaries
