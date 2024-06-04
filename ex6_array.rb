@@ -7,7 +7,7 @@ p array
 p array.first # "That" ----> Get the first element of the array
 p array.last # true -----> Get the last element of the array
 p array[2] #3.14 ------> Get the element by index
-
+p array.take(2) # Take 2 element at the beginning of the array
 
 #Modifying an array
 p array.pop #true ----> Pop the last element and return it
@@ -16,7 +16,7 @@ p array << 5 #---> Another way to push a new element to the end of the array
 p array.delete_at(3) # 'Hello' ---> Delete element at index 3and modify the array
 p array.delete(3.14) # 3.14  ---> Delete the element with value 3.14 in the array
 p array.unshift(false) # [false, "That", 4, "World", 5] ----> Push a new element to the start of array
-
+array.shift() #-> pop the first element
 
 #Method on array
 array = [1,2,3]
@@ -46,7 +46,7 @@ array.each_with_index {|value, index| print "#{index}-#{value} "}
 #Sort
 array = [1,2,8,7,5,2,1,4,6,4,2] 
 p array.sort #[1,1,2,2,2,4,4,5,6,7,8] ---> Not destructive
-
+p array.first(3)
 #Combine 2 array
 array = [1,2,3]
 p array.product([4,5]) # [[1,4], [1,5], [2,4], [2,5], [3,4], [3,5]] --- Not destructive
@@ -59,3 +59,6 @@ p enum.next # Return: 1
 #Note
 array = [1,2,3]
 p array[6] # ---> nil not Error 
+require 'active_support/all'
+
+p Time.now  + 30.day+ 1.month 

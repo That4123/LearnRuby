@@ -18,7 +18,7 @@ puts mutate_array(array) #4 --> In Ruby, the implicit return of the function is 
 puts "#{array}" #[1,2,3]
 
 
-# Using explitit return with key word 'return'
+# Using explicit return with key word 'return'
 number = 2
 def change(num)
     #do something
@@ -42,5 +42,5 @@ p print something = "nothing" #nothingnil
 # Compare p, print and puts
     # puts -> print result in string type and add newline after that
     # print -> print result in string type without add newline
-    # puts -> call the method inspect of the object passed to, include "" for the string literal
-    
+    # p -> call the method inspect of the object passed to, include "" for the string literal
+
